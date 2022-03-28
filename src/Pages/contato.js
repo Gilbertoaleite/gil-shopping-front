@@ -49,12 +49,12 @@ const Contatos = () => {
 		setAuthor('');
 		setContent('');
 
-		console.log(content);
+		
 	};
 
 	return (
 		<>
-			<Grid container direction='row' xs={12}>
+			<Grid container direction='row' xs={4}>
 				<TextField
 					id='name'
 					label='Name'
@@ -101,7 +101,7 @@ const Contatos = () => {
 
 			<Button
 				onClick={sendMessage}
-				className='mt-2'
+				className='mt-3 p-2'
 				variant='contained'
 				color='primary'
 			>
@@ -110,7 +110,7 @@ const Contatos = () => {
 
 			{message.map((content) => {
 				return (
-					<div className='card mt-2' key={content.id}>
+					<div className='card mt-3 mb-3' key={content.id}>
 						<div className='card-body'>
 							<h5 className='card-title'>{content.email}</h5>
 							<p className='card-text'>{content.message}</p>

@@ -7,28 +7,23 @@ import Cart from './Cart';
 
 
 
-const Header = () => {
+const Footer = () => {
 	return (
 		<Grid
 			container
 			direction='row'
-			justify='space-around'
+			justify='center'
 			alignItems='center'
 			xs={12}
-			
 		>
-			<Typography variant='h3' color='secondary'>
-				Gil Shopping
+			<Typography mt='2' variant='p' color='primary'>
+				Desenvolvido por:
 			</Typography>
 			<Link to='/' underline='hover'>
-				<Button color='secondary'>Home</Button>
+				<Button color='primary'>Gilberto A Leite</Button>
 			</Link>
-			<Link to='/contato' underline='hover'>
-				<Button color='secondary'>Contato</Button>
-			</Link>
-			<Cart />
 		</Grid>
 	);
 };
 
-export default Header;
+export default Footer;
